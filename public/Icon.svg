@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Schoen Cyber Solutions S Icon</title>
+  <desc id="desc">Stylized S icon with blue-to-navy gradient on a transparent background.</desc>
+  <defs>
+    <linearGradient id="sGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1267F3"/>
+      <stop offset="48%" stop-color="#0A3F9A"/>
+      <stop offset="100%" stop-color="#03163F"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#sGradient)" d="M250 165
+    C250 110 295 65 350 65
+    H805
+    L700 210
+    H390
+    C355 210 330 235 330 270
+    C330 305 355 330 390 330
+    H620
+    C735 330 825 420 825 535
+    C825 650 735 740 620 740
+    H195
+    L300 595
+    H585
+    C620 595 645 570 645 535
+    C645 500 620 475 585 475
+    H380
+    C235 475 145 390 145 270
+    C145 215 165 180 195 145
+    C210 130 230 115 250 105
+    Z"/>
+</svg>

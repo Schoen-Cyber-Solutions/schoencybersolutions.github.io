@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs>
+  <linearGradient id="blueGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#1476F2"/>
+    <stop offset="55%" stop-color="#0847A8"/>
+    <stop offset="100%" stop-color="#03183F"/>
+  </linearGradient>
+</defs>
+<!-- transparent background -->
+<g transform="translate(515 70) scale(.57)">
+  <path fill="url(#blueGrad)" d="M115 0H790L680 135H245c-55 0-95 36-95 83s40 82 95 82h330c145 0 245 93 245 224 0 132-101 226-245 226H0l115-137h430c57 0 96-36 96-85 0-48-39-84-96-84H220C80 444 0 354 0 222 0 91 82 0 220 0Z"/>
+</g>
+<text x="800" y="620" text-anchor="middle" fill="#041A49"
+      font-family="Arial, Helvetica, sans-serif" font-size="132" font-weight="600"
+      letter-spacing="46">SCHOEN</text>
+<text x="800" y="735" text-anchor="middle" fill="#0968E8"
+      font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="600"
+      letter-spacing="29">CYBER SOLUTIONS</text>
+<line x1="160" y1="825" x2="310" y2="825" stroke="#0968E8" stroke-width="8"/>
+<line x1="1290" y1="825" x2="1440" y2="825" stroke="#0968E8" stroke-width="8"/>
+<text x="800" y="845" text-anchor="middle" fill="#041A49"
+      font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600"
+      letter-spacing="7">SECURE SYSTEMS. RESILIENT FUTURES.</text>
+</svg>

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Menu, X, Shield } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -47,11 +47,14 @@ function Navbar() {
               e.preventDefault()
               window.scrollTo({ top: 0, behavior: 'smooth' })
             }}
-            className="flex items-center gap-2 text-white font-semibold text-lg tracking-tight hover:opacity-80 transition-opacity"
+            className="flex items-center hover:opacity-80 transition-opacity"
             aria-label="Schoen Cyber Solutions - Home"
           >
-            <Shield className="w-5 h-5 text-accent" aria-hidden="true" />
-            <span>Schoen Cyber Solutions</span>
+            <img
+              src="/Full Logo.svg"
+              alt="Schoen Cyber Solutions"
+              className="h-8 w-auto object-contain"
+            />
           </a>
 
           {/* Desktop Nav */}

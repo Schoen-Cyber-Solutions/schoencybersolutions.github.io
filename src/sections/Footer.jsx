@@ -1,4 +1,4 @@
-import { Linkedin, Github, Shield } from 'lucide-react'
+import { Linkedin, Github } from 'lucide-react'
 
 function Footer() {
   return (
@@ -9,26 +9,31 @@ function Footer() {
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
-          <div className="flex items-center gap-2 text-slate-300 font-medium">
-            <Shield className="w-4 h-4 text-accent" aria-hidden="true" />
-            <span>Schoen Cyber Solutions</span>
+          <div className="flex items-center">
+            <img
+              src="/Full Logo.svg"
+              alt="Schoen Cyber Solutions"
+              className="h-5 w-auto object-contain"
+            />
           </div>
 
           {/* Social Links */}
           <div className="flex items-center gap-4">
             <a
-              href="#"
+              href="https://www.linkedin.com/company/schoencybersolutions"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 text-slate-400 hover:text-white transition-colors"
-              aria-label="LinkedIn (coming soon)"
-              title="LinkedIn - URL to be added"
+              aria-label="Schoen Cyber Solutions on LinkedIn"
             >
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="https://github.com/Schoen-Cyber-Solutions"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 text-slate-400 hover:text-white transition-colors"
-              aria-label="GitHub (coming soon)"
-              title="GitHub - URL to be added"
+              aria-label="Schoen Cyber Solutions on GitHub"
             >
               <Github className="w-5 h-5" />
             </a>
