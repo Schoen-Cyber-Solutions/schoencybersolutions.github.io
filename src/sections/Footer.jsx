@@ -11,7 +11,7 @@ function Footer() {
           {/* Logo */}
           <div className="flex items-center">
             <img
-              src="/Full Logo.svg"
+              src="/Icon.svg"
               alt="Schoen Cyber Solutions"
               className="h-5 w-auto object-contain"
             />

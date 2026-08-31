@@ -51,7 +51,7 @@ function Navbar() {
             aria-label="Schoen Cyber Solutions - Home"
           >
             <img
-              src="/Full Logo.svg"
+              src="/Icon.svg"
               alt="Schoen Cyber Solutions"
               className="h-8 w-auto object-contain"
             />
