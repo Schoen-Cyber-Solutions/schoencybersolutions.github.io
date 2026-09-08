@@ -1,20 +1,24 @@
 # Dependencies
-node_modules
+node_modules/
 .pnp
 .pnp.js
 
 # Build output
-dist
-dist-ssr
+dist/
+dist-ssr/
+*.local
 
 # Editor
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
+*.swp
+*.swo
+*~
 
 # OS
 .DS_Store
-*.pem
+Thumbs.db
 
 # Logs
 npm-debug.log*
@@ -24,4 +28,10 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # Local env files
-.env*.local
+.env
+.env.*
+!.env.example
+
+# Misc
+*.pem
+.cache/

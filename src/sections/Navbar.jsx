@@ -15,7 +15,9 @@ function Navbar() {
 
   const navLinks = [
     { href: '#about', label: 'About' },
-    { href: '#focus', label: 'Focus' },
+    { href: '#services', label: 'Services' },
+    { href: '#process', label: 'How It Works' },
+    { href: '#why-us', label: 'Why Us' },
     { href: '#contact', label: 'Contact' },
   ]
 

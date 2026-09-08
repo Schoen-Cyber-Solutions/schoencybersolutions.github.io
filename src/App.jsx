@@ -1,8 +1,11 @@
 import Navbar from './sections/Navbar'
 import Hero from './sections/Hero'
+import Problem from './sections/Problem'
+import Services from './sections/Services'
+import AdditionalCapabilities from './sections/AdditionalCapabilities'
+import Process from './sections/Process'
+import WhyUs from './sections/WhyUs'
 import About from './sections/About'
-import FocusAreas from './sections/FocusAreas'
-import Vision from './sections/Vision'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
 
@@ -12,9 +15,12 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <Problem />
+        <Services />
+        <AdditionalCapabilities />
+        <Process />
+        <WhyUs />
         <About />
-        <FocusAreas />
-        <Vision />
         <Contact />
       </main>
       <Footer />

@@ -1,9 +1,9 @@
-import { ArrowDown } from 'lucide-react'
+import { ArrowDown, ArrowRight } from 'lucide-react'
 
 function Hero() {
-  const handleScrollToContact = (e) => {
+  const handleScrollTo = (e, selector) => {
     e.preventDefault()
-    const element = document.querySelector('#contact')
+    const element = document.querySelector(selector)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
     }
@@ -35,27 +35,39 @@ function Hero() {
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <div className="animate-fade-in-up">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-6">
-            Security Built Into
+            Practical cybersecurity
             <br />
-            <span className="text-accent">Technology.</span>
+            <span className="text-accent">for small businesses.</span>
           </h1>
         </div>
 
         <div className="animate-fade-in-up" style={{ animationDelay: '0.15s' }}>
-          <p className="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Cybersecurity and secure software development focused on building
-            resilient digital systems from the ground up.
+          <p className="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-4 leading-relaxed">
+            Strengthen your Microsoft 365 environment, prepare for cyber insurance
+            requirements, and meet customer security requirements — without
+            unnecessary enterprise complexity.
+          </p>
+          <p className="text-sm text-slate-500 mb-10">
+            Chicago-based · Serving businesses across the U.S. and Europe
           </p>
         </div>
 
-        <div className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+        <div className="animate-fade-in-up flex flex-col sm:flex-row items-center justify-center gap-4" style={{ animationDelay: '0.3s' }}>
           <a
             href="#contact"
-            onClick={handleScrollToContact}
+            onClick={(e) => handleScrollTo(e, '#contact')}
             className="inline-flex items-center gap-2 px-8 py-4 bg-accent/10 border border-accent/30 text-accent font-medium rounded-lg hover:bg-accent/20 hover:border-accent/50 transition-all duration-300 group"
           >
-            Get in Touch
+            Schedule a Consultation
             <ArrowDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
+          </a>
+          <a
+            href="#services"
+            onClick={(e) => handleScrollTo(e, '#services')}
+            className="inline-flex items-center gap-2 px-8 py-4 text-slate-300 font-medium rounded-lg hover:text-white transition-all duration-300 group"
+          >
+            Explore Services
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
           </a>
         </div>
       </div>

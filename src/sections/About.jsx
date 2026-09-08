@@ -11,14 +11,21 @@ function About() {
             id="about-heading"
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-8"
           >
-            Security by Design.
+            About Schoen Cyber Solutions
           </h2>
-          <p className="text-lg sm:text-xl text-slate-400 leading-relaxed max-w-3xl">
-            Schoen Cyber Solutions LLC is a cybersecurity and secure software development
-            company focused on integrating security throughout the technology lifecycle.
-            From architecture and development to testing and monitoring, security should be
-            a fundamental part of how digital systems are built.
-          </p>
+          <div className="space-y-6 text-lg sm:text-xl text-slate-400 leading-relaxed max-w-3xl">
+            <p>
+              Schoen Cyber Solutions LLC is a Chicago-based cybersecurity company
+              focused on practical security services for small businesses. We help
+              organizations strengthen Microsoft 365 security, prepare for cyber
+              insurance, and respond to security questionnaires — without requiring
+              an enterprise security team.
+            </p>
+            <p>
+              Our long-term direction combines cybersecurity expertise with secure
+              software development, building resilient technology from the ground up.
+            </p>
+          </div>
         </div>
       </div>
     </section>

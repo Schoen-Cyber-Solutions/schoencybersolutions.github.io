@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github } from 'lucide-react'
+import { Mail } from 'lucide-react'
 
 function Contact() {
   return (
@@ -13,11 +13,12 @@ function Contact() {
             id="contact-heading"
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-6"
           >
-            Let&apos;s Connect.
+            Have a security requirement you need help with?
           </h2>
           <p className="text-lg sm:text-xl text-slate-400 leading-relaxed max-w-2xl mb-10">
-            Interested in working together, discussing a project, or connecting
-            professionally? Get in touch.
+            Whether you&apos;re reviewing Microsoft 365, preparing for cyber insurance,
+            or responding to a customer security questionnaire, let&apos;s determine
+            what actually needs attention.
           </p>
 
           <a
@@ -25,7 +26,7 @@ function Contact() {
             className="inline-flex items-center gap-3 px-8 py-4 bg-accent/10 border border-accent/30 text-accent font-medium rounded-lg hover:bg-accent/20 hover:border-accent/50 transition-all duration-300 group"
           >
             <Mail className="w-5 h-5" aria-hidden="true" />
-            contact@schoencybersolutions.com
+            Schedule a Consultation
           </a>
         </div>
       </div>
