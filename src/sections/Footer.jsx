@@ -44,6 +44,28 @@ function Footer() {
             &copy; 2026 Schoen Cyber Solutions LLC. All rights reserved.
           </p>
         </div>
+
+        {/* Student App links */}
+        <nav
+          className="mt-8 pt-8 border-t border-slate-800/50 flex flex-wrap items-center justify-center gap-x-6 gap-y-2"
+          aria-label="Student App"
+        >
+          {[
+            { href: '/student-app/', label: 'Student App' },
+            { href: '/student-app/privacy/', label: 'Privacy Policy' },
+            { href: '/student-app/terms/', label: 'Terms of Use' },
+            { href: '/student-app/community-guidelines/', label: 'Community Guidelines' },
+            { href: '/student-app/support/', label: 'Support' },
+          ].map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-sm text-slate-500 hover:text-white transition-colors"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
       </div>
     </footer>
   )

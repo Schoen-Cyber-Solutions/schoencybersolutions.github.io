@@ -27,6 +27,19 @@ function Navbar() {
     const element = document.querySelector(href)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      // Anchor only exists on the homepage — navigate there first.
+      window.location.href = `/${href}`
+    }
+  }
+
+  const handleLogoClick = (e) => {
+    e.preventDefault()
+    setIsOpen(false)
+    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    } else {
+      window.location.href = '/'
     }
   }
 
@@ -44,11 +57,8 @@ function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault()
-              window.scrollTo({ top: 0, behavior: 'smooth' })
-            }}
+            href="/"
+            onClick={handleLogoClick}
             className="flex items-center hover:opacity-80 transition-opacity"
             aria-label="Schoen Cyber Solutions - Home"
           >
@@ -72,6 +82,13 @@ function Navbar() {
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-accent transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
+            <a
+              href="/student-app/"
+              className="text-sm font-medium text-slate-300 hover:text-white transition-colors relative group"
+            >
+              Student App
+              <span className="absolute -bottom-1 left-0 w-0 h-px bg-accent transition-all duration-300 group-hover:w-full" />
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -100,6 +117,12 @@ function Navbar() {
                 {link.label}
               </a>
             ))}
+            <a
+              href="/student-app/"
+              className="block py-3 text-base font-medium text-slate-300 hover:text-white transition-colors"
+            >
+              Student App
+            </a>
           </div>
         </div>
       )}
