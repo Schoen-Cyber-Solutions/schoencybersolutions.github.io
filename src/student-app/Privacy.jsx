@@ -30,7 +30,9 @@ function Privacy() {
           <p>
             To create and secure your account, we store your chosen username,
             optional profile details you provide (such as display name, bio, or
-            program of study), and session data used to keep you signed in.
+            program of study), and session data used to keep you signed in. We
+            also record the date and time and the version of the Terms of
+            Service you accepted at registration.
           </p>
 
           <h3 className="text-base font-semibold text-slate-200">Email verification</h3>
